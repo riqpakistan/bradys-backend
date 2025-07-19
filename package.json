@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Backend API for Bradys app.",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
