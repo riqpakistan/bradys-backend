@@ -1,0 +1,40 @@
+{
+  "name": "bradys-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Bradys app.",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^17.2.0",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.7.0",
+    "moment-timezone": "^0.6.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^3.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riqpakistan/bradys-backend.git"
+  },
+  "keywords": [],
+  "author": "Muhammad Ahsan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riqpakistan/bradys-backend/issues"
+  },
+  "homepage": "https://github.com/riqpakistan/bradys-backend#readme"
+}

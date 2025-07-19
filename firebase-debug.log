@@ -1,0 +1,81 @@
+[debug] [2024-11-11T06:48:30.743Z] ----------------------------------------------------------------------
+[debug] [2024-11-11T06:48:30.746Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Developer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions --debug
+[debug] [2024-11-11T06:48:30.746Z] CLI Version:   13.22.1
+[debug] [2024-11-11T06:48:30.746Z] Platform:      win32
+[debug] [2024-11-11T06:48:30.746Z] Node Version:  v20.18.0
+[debug] [2024-11-11T06:48:30.747Z] Time:          Mon Nov 11 2024 11:48:30 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-11-11T06:48:30.747Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-11T06:48:30.819Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2024-11-11T06:48:30.825Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-11T06:48:30.826Z] > authorizing via signed-in user (riqpakistan@gmail.com)
+[debug] [2024-11-11T06:48:30.827Z] [iam] checking project project1-4ee2b for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-11-11T06:48:30.830Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:30.831Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:30.833Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project1-4ee2b:testIamPermissions [none]
+[debug] [2024-11-11T06:48:30.834Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project1-4ee2b:testIamPermissions x-goog-quota-user=projects/project1-4ee2b
+[debug] [2024-11-11T06:48:30.835Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project1-4ee2b:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-11-11T06:48:32.382Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project1-4ee2b:testIamPermissions 200
+[debug] [2024-11-11T06:48:32.383Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project1-4ee2b:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-11-11T06:48:32.384Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:32.385Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:32.386Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/project1-4ee2b/serviceAccounts/project1-4ee2b@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-11-11T06:48:32.386Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/project1-4ee2b/serviceAccounts/project1-4ee2b@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-11-11T06:48:34.178Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/project1-4ee2b/serviceAccounts/project1-4ee2b@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-11-11T06:48:34.179Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/project1-4ee2b/serviceAccounts/project1-4ee2b@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'project1-4ee2b'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[debug] [2024-11-11T06:48:38.858Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:38.858Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:38.860Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project1-4ee2b [none]
+[debug] [2024-11-11T06:48:39.325Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project1-4ee2b 200
+[debug] [2024-11-11T06:48:39.326Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project1-4ee2b {"projectId":"project1-4ee2b","projectNumber":"461424178117","displayName":"project1","name":"projects/project1-4ee2b","resources":{"hostingSite":"project1-4ee2b","storageBucket":"project1-4ee2b.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_5e8253d7-28cd-4c8e-b70d-90bd51b52da1"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2024-11-11T06:48:39.330Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:39.330Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:39.331Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:39.332Z] Checked if tokens are valid: true, expires at: 1731309710324
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2024-11-11T06:48:39.333Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:39.334Z] Checked if tokens are valid: true, expires at: 1731309710324
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-11-11T06:48:39.335Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:39.336Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:39.337Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-11-11T06:48:39.338Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/project1-4ee2b
+[debug] [2024-11-11T06:48:39.341Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-11-11T06:48:39.343Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/project1-4ee2b
+[debug] [2024-11-11T06:48:39.347Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudbuild.googleapis.com [none]
+[debug] [2024-11-11T06:48:39.348Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudbuild.googleapis.com x-goog-quota-user=projects/project1-4ee2b
+[debug] [2024-11-11T06:48:39.352Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/artifactregistry.googleapis.com [none]
+[debug] [2024-11-11T06:48:39.352Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/artifactregistry.googleapis.com x-goog-quota-user=projects/project1-4ee2b
+[debug] [2024-11-11T06:48:40.875Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudbuild.googleapis.com 200
+[debug] [2024-11-11T06:48:40.876Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudbuild.googleapis.com [omitted]
+[warn] !  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2024-11-11T06:48:40.877Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:40.878Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:40.878Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2024-11-11T06:48:40.879Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudbuild.googleapis.com:enable x-goog-quota-user=projects/project1-4ee2b
+[debug] [2024-11-11T06:48:40.901Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudfunctions.googleapis.com 200
+[debug] [2024-11-11T06:48:40.902Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-11-11T06:48:40.905Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/artifactregistry.googleapis.com 200
+[debug] [2024-11-11T06:48:40.907Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/artifactregistry.googleapis.com [omitted]
+[warn] !  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2024-11-11T06:48:40.908Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:40.909Z] Checked if tokens are valid: true, expires at: 1731309710324
+[debug] [2024-11-11T06:48:40.909Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2024-11-11T06:48:40.910Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/artifactregistry.googleapis.com:enable x-goog-quota-user=projects/project1-4ee2b
+[debug] [2024-11-11T06:48:40.950Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/runtimeconfig.googleapis.com 200
+[debug] [2024-11-11T06:48:40.951Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-11-11T06:48:41.346Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudbuild.googleapis.com:enable 400
+[debug] [2024-11-11T06:48:41.347Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/project1-4ee2b/services/cloudbuild.googleapis.com:enable [omitted]
+[error] 
+[error] Error: Your project project1-4ee2b must be on the Blaze (pay-as-you-go) plan to complete this command. Required API cloudbuild.googleapis.com can't be enabled until the upgrade is complete. To upgrade, visit the following URL:
+
+https://console.firebase.google.com/project/project1-4ee2b/usage/details
