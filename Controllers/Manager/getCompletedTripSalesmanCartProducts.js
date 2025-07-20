@@ -1,7 +1,6 @@
-const db = require('../utils/firebaseAdmin');
-const functions = require('firebase-functions');
+const db = require('../../utils/firebaseAdmin');
 
-const getCompletedTripSalesmanCartProducts = functions.https.onRequest(async (req, res) => {
+const getCompletedTripSalesmanCartProducts = async (req, res) => {
     const salesmanName = req.query.salesmanName;
 
     if (!salesmanName) {
@@ -57,6 +56,6 @@ const getCompletedTripSalesmanCartProducts = functions.https.onRequest(async (re
         console.error('Error fetching products:', error);
         res.status(500).json({ error: 'Error fetching products: ' + error.message });
     }
-});
+}
 
-module.exports = getCompletedTripSalesmanCartProducts;
+module.exports = {getCompletedTripSalesmanCartProducts};

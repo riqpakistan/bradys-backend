@@ -1,9 +1,8 @@
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-const db = admin.firestore();
-const shared = require('../Shared/shared');
 
-const getAllCompletedTripsSalesman = functions.https.onRequest(async (req, res) => {
+const db = require('../../utils/firebaseAdmin');
+const shared = require('../../Shared/shared');
+
+const getAllCompletedTripsSalesman = async (req, res) => {
     const managerName = req.query.managerName;
     const currentDate = shared.getCurrentDate();
     // const currentDate = new Date().toISOString().split('T')[0];  // Get current date in YYYY-MM-DD format
@@ -51,6 +50,6 @@ const getAllCompletedTripsSalesman = functions.https.onRequest(async (req, res) 
         console.error('Error fetching trips:', error);
         res.status(500).send('Error fetching trips: ' + error.message);
     }
-});
+}
 
-module.exports = getAllCompletedTripsSalesman;
+module.exports = {getAllCompletedTripsSalesman};

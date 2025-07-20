@@ -1,8 +1,6 @@
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-const db = admin.firestore();
+const db = require('../../utils/firebaseAdmin');
 
-const getSalesAndReturnReports = functions.https.onRequest(async (req, res) => {
+const getSalesAndReturnReports = async (req, res) => {
     try {
         const sectorsSnapshot = await db.collection('Sectors').get();
         let shopSalesData = [];
@@ -75,6 +73,6 @@ const getSalesAndReturnReports = functions.https.onRequest(async (req, res) => {
         console.error('Error fetching shop sales data:', error);
         res.status(500).json({ error: 'Error fetching shop sales data: ' + error.message });
     }
-});
+}
 
-module.exports = getSalesAndReturnReports;
+module.exports = {getSalesAndReturnReports} ;

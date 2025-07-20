@@ -1,4 +1,4 @@
-const db = require('../utils/firebaseAdmin');
+const db = require('../../utils/firebaseAdmin');
 
 const getManagerPendingRequestsList = async (req, res) => {
     const managerName = 'Ahsan';
@@ -26,4 +26,4 @@ const getManagerPendingRequestsList = async (req, res) => {
     }
 }
 
-module.exports = getManagerPendingRequestsList;
+module.exports = {getManagerPendingRequestsList};
